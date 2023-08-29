@@ -68,14 +68,13 @@ Print-based debugging is all about making your log messages stand out and being 
    puts User.where(email: 'test@email.com').to_sql
    ```
 
-10. ActiveModel Attributes: Instead of printing the whole object, just print the attributes:
+10. **ActiveModel Attributes**: Instead of printing the whole object, just print the attributes:
+    ```ruby
+    puts @user.attributes.to_s
+    ```
 
-   ```ruby
-   puts @user.attributes.to_s
-   ```
+11. **Dump Object to a File**: If the object is too large, dump it into a file to inspect later:
 
-11. Dump Object to a File: If the object is too large, dump it into a file to inspect later:
-
-   ```ruby
-   File.open("debug_output.txt", "w") { |f| f.write(Order.all.inspect) }
-   ```
+    ```ruby
+    File.open("debug_output.txt", "w") { |f| f.write(Order.all.inspect) }
+    ```
