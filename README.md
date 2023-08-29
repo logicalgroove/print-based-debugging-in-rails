@@ -2,7 +2,7 @@
 
 Print-based debugging is all about making your log messages stand out and being easily digestible. Here are some less common but potentially helpful hacks and tips for debugging.
 
-1. **Custom Delimiters**: Just as you used "*"*30, you can create visually distinct delimiters:
+1. **Custom Delimiters**: You can create visually distinct delimiters:
    
    ```ruby
    puts "="*50
